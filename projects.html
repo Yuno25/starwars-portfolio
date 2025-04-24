@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Projects – Star Wars Portfolio</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/main.js" defer></script>
+  <style>
+    .projects {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2rem;
+      padding: 2rem;
+    }
+    .project-card {
+      background: rgba(0, 0, 0, 0.8);
+      border: 2px solid #ffe81f;
+      padding: 1rem;
+      width: 300px;
+      transition: 0.3s;
+    }
+    .project-card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 20px #ffe81f;
+    }
+    .project-card h3 {
+      margin-bottom: 0.5rem;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="projects.html">Projects</a>
+    <a href="skills.html">Skills</a>
+    <a href="certificates.html">Certificates</a>
+    <a href="contact.html">Contact</a>
+    <a href="farewell.html">Farewell</a>
+  </nav>
+
+  <section class="projects">
+    <div class="project-card">
+      <h3>EPISODE II</h3>
+      <p>Jio Clone – Fullstack project replicating Jio UI/UX.</p>
+    </div>
+    <div class="project-card">
+      <h3>EPISODE III</h3>
+      <p>AI Chatbot – Smart assistant using OpenAI APIs.</p>
+    </div>
+    <div class="project-card">
+      <h3>EPISODE IV</h3>
+      <p>Media Player – Built with React & Electron.</p>
+    </div>
+  </section>
+</body>
+</html>

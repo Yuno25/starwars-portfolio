@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Skills – Star Wars Portfolio</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/main.js" defer></script>
+  <style>
+    .skills {
+      max-width: 800px;
+      margin: 3rem auto;
+      padding: 1rem;
+    }
+    .skill {
+      margin-bottom: 3rem;
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+    .skill-label {
+      width: 150px;
+      font-size: 1.3rem;
+      color: #ffe81f;
+    }
+    .saber-hilt {
+      width: 20px;
+      height: 20px;
+      background: silver;
+      border: 2px solid #333;
+      border-radius: 4px;
+      box-shadow: 0 0 5px #999;
+    }
+    .lightsaber-blade {
+      flex-grow: 1;
+      height: 14px;
+      background: linear-gradient(to right, var(--blade-color), #ffffff50);
+      box-shadow: 0 0 10px var(--blade-color), 0 0 20px var(--blade-color);
+      border-radius: 5px 0 0 5px;
+      animation: ignite 2s ease-out forwards;
+      transform-origin: left;
+      transform: scaleX(0);
+    }
+    @keyframes ignite {
+      to { transform: scaleX(1); }
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="projects.html">Projects</a>
+    <a href="skills.html">Skills</a>
+    <a href="certificates.html">Certificates</a>
+    <a href="contact.html">Contact</a>
+    <a href="farewell.html">Farewell</a>
+  </nav>
+
+  <section class="skills">
+    <div class="skill">
+      <div class="skill-label">HTML/CSS/JS</div>
+      <div class="saber-hilt"></div>
+      <div class="lightsaber-blade" style="--blade-color: #00ffff; width: 95%;"></div>
+    </div>
+    <div class="skill">
+      <div class="skill-label">React.js</div>
+      <div class="saber-hilt"></div>
+      <div class="lightsaber-blade" style="--blade-color: #00ff00; width: 90%;"></div>
+    </div>
+    <div class="skill">
+      <div class="skill-label">Node.js</div>
+      <div class="saber-hilt"></div>
+      <div class="lightsaber-blade" style="--blade-color: #ff0000; width: 80%;"></div>
+    </div>
+  </section>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Farewell - Star Wars Portfolio</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="js/main.js" defer></script>
+  <style>
+    .farewell {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 80vh;
+      text-align: center;
+      animation: fadein 3s ease;
+    }
+    .farewell img {
+      width: 180px;
+      margin-bottom: 1rem;
+      filter: drop-shadow(0 0 8px #00ffcc);
+    }
+    .farewell h2 {
+      font-size: 2rem;
+      color: #ffe81f;
+      animation: glow 2s infinite alternate;
+    }
+    @keyframes glow {
+      from { text-shadow: 0 0 10px #ffe81f; }
+      to { text-shadow: 0 0 20px #00ffcc; }
+    }
+    @keyframes fadein {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <nav>
+  <a href="index.html">Home</a>
+  <a href="projects.html">Projects</a>
+  <a href="skills.html">Skills</a>
+  <a href="certificates.html">Certificates</a>
+  <a href="contact.html">Contact</a>
+  <a href="farewell.html">Farewell</a>
+</nav>
+  <div class="farewell">
+    <img src="assets/yoda.png" alt="Yoda" />
+    <h2>"Grateful for your visit, I am. Return, you must."</h2>
+  </div>
+</body>
+</html>
